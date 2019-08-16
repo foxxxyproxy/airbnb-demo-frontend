@@ -1,12 +1,11 @@
 import React from "react";
 import searchIcon from "./search-icon.svg";
-//import avatar from "./avatar.png";
-//import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const Conteiner = styled.div`
   width: 100%;
   position: relative;
+  margin-bottom: 60px;
 `;
 
 const SearchInput = styled.input`
@@ -41,8 +40,8 @@ const SearchButton = styled.button`
 
 const Search = props => (
   <Conteiner className="conteiner">
-    <SearchInput className="search-input" placeholder='Try "Los Angeles"' />
-    <SearchButton>Search</SearchButton>
+    <SearchInput className="search__input" placeholder='Try "Los Angeles"' />
+    <SearchButton className="search__button">Search</SearchButton>
   </Conteiner>
 );
 

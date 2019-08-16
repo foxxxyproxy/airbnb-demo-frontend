@@ -18,7 +18,7 @@ const HeaderWrap = styled.header`
   padding: 0 26px;
 `;
 
-const Applogo = styled.img`
+const AppLogo = styled.img`
   cursor: pointer;
   margin-right: auto;
 `;
@@ -27,29 +27,32 @@ const StyledLink = styled(NavLink)`
   display: none;
   text-decoration: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem;
   color: #3d4e61;
   margin: 0 30px;
 
-  &.nav--profile {
+  &.link--profile {
     display: inline-block;
+    margin: 0 0 0 30px;
   }
   @media (min-width: 576px) {
     display: inline-block;
   }
 `;
 
-const Avatar = styled.img``;
+const Avatar = styled.img`
+  border-radius: 50%;
+`;
 
 const Header = props => (
-  <HeaderWrap>
-    <Applogo src={logo} alt={"AirBnb logo"} title={"AirBnb"} />
+  <HeaderWrap className="header">
+    <AppLogo className="header__logo" src={logo} alt="logo" title="AirBnb" />
 
     <StyledLink to="/"> Become a host </StyledLink>
     <StyledLink to="/"> Trips </StyledLink>
     <StyledLink to="/"> Messages </StyledLink>
-    <StyledLink className="nav--profile" to="/">
-      <Avatar src={avatar} alt={"User photo"} />
+    <StyledLink className="link--profile" to="/">
+      <Avatar src={avatar} alt="User avatar" />
     </StyledLink>
   </HeaderWrap>
 );
