@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Conteiner = styled.div`
@@ -8,6 +9,7 @@ const Conteiner = styled.div`
   width: 100%;
   a {
     text-decoration: none;
+    color: var(--mainColor);
   }
   p {
     margin: 5px;
@@ -37,12 +39,12 @@ const Price = styled.p`
 
 const Card = props => (
   <Conteiner className="card_wrapper">
-    <a href={props.href}>
+    <Link href={props.href}>
       <Photo src={props.imgSrc} alt={props.title} />
       <Type>{props.type}</Type>
       <Title>{props.title}</Title>
       <Price>{props.price}$ per night</Price>
-    </a>
+    </Link>
   </Conteiner>
 );
 

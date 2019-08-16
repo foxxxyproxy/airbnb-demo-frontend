@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header/Header";
 import Search from "./Search/Search";
 import Section from "./Section";
+import Footer from "./Footer";
 import styled from "styled-components";
 import HomesList from "./homes-list";
 import ExperiencesList from "./experiences-list";
@@ -14,7 +15,7 @@ const Conteiner = styled.div`
 
 const Title = styled.h1`
   font-size: 28px;
-  color: #3d4e61;
+  color: var(--mainColor);
   line-height: 33px;
   display: block;
   width: 60%;
@@ -40,6 +41,7 @@ const Home = () => (
         <Section SectionTitle="Experiences" items={ExperiencesList} />
       </main>
     </Conteiner>
+    <Footer />
   </html>
 );
 

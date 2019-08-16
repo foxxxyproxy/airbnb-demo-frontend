@@ -28,7 +28,7 @@ const StyledLink = styled(NavLink)`
   text-decoration: none;
   cursor: pointer;
   font-size: 1rem;
-  color: #3d4e61;
+  color: var(--mainColor);
   margin: 0 30px;
 
   &.link--profile {

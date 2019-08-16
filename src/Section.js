@@ -1,6 +1,4 @@
 import React from "react";
-//import avatar from "./avatar.png";
-//import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import Card from "./Card";
 
@@ -10,10 +8,9 @@ const Conteiner = styled.section`
 const Title = styled.h2`
   font-size: 28px;
   line-height: 33px;
-  color: #3d4e61;
+  color: var(--mainColor);
 `;
 
-//TODO: list cards
 const Section = props => (
   <Conteiner className="list">
     <Title className="list__title">{props.SectionTitle} </Title>
