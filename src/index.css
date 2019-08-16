@@ -1,5 +1,6 @@
 :root {
-  font-family: Avenir, sans-serif;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
   box-sizing: border-box;
   font-size: 16px;
   --mainColor: #3d4e61;

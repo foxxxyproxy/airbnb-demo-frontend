@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import avatar from "./avatar.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import styled from "styled-components";
 
 const HeaderWrap = styled.header`
@@ -30,14 +30,19 @@ const StyledLink = styled(NavLink)`
   font-size: 1rem;
   color: var(--mainColor);
   margin: 0 30px;
+  cursor: pointer;
+  padding: 20px 0;
 
-  &.link--profile {
-    display: inline-block;
-    margin: 0 0 0 30px;
+  &:hover {
+    box-shadow: 0 2px 0 0 var(--mainColor);
   }
+
   @media (min-width: 576px) {
     display: inline-block;
   }
+`;
+const StLink = styled(Link)`
+  margin: 0 0 0 30px;
 `;
 
 const Avatar = styled.img`
@@ -51,9 +56,9 @@ const Header = props => (
     <StyledLink to="/"> Become a host </StyledLink>
     <StyledLink to="/"> Trips </StyledLink>
     <StyledLink to="/"> Messages </StyledLink>
-    <StyledLink className="link--profile" to="/">
+    <StLink className="link--profile" to="/">
       <Avatar src={avatar} alt="User avatar" />
-    </StyledLink>
+    </StLink>
   </HeaderWrap>
 );
 

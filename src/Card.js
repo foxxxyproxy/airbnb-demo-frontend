@@ -12,7 +12,7 @@ const Conteiner = styled.div`
     color: var(--mainColor);
   }
   p {
-    margin: 5px;
+    margin: 10px;
   }
 `;
 
