@@ -1,9 +1,10 @@
 import React from "react";
 import Header from "./Header/Header";
 import Search from "./Search/Search";
-import Homes from "./Homes/Homes";
+import Section from "./Section";
 import styled from "styled-components";
-import List from "./HomesList";
+import HomesList from "./homes-list";
+import ExperiencesList from "./experiences-list";
 
 const Conteiner = styled.div`
   width: 80%;
@@ -35,7 +36,8 @@ const Home = () => (
           Book unique homes and experiences all over the world.
         </Title>
         <Search />
-        <Homes items={List} />
+        <Section SectionTitle="Homes" items={HomesList} />
+        <Section SectionTitle="Experiences" items={ExperiencesList} />
       </main>
     </Conteiner>
   </html>

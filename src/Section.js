@@ -2,7 +2,7 @@ import React from "react";
 //import avatar from "./avatar.png";
 //import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import Card from "../Card/Card";
+import Card from "./Card";
 
 const Conteiner = styled.section`
   width: 100%;
@@ -14,9 +14,9 @@ const Title = styled.h2`
 `;
 
 //TODO: list cards
-const Homes = props => (
-  <Conteiner className="homes-list">
-    <Title className="homes-list__title">Homes</Title>
+const Section = props => (
+  <Conteiner className="list">
+    <Title className="list__title">{props.SectionTitle} </Title>
     <div className="row">
       {props.items.map(item => {
         return (
@@ -24,7 +24,9 @@ const Homes = props => (
             <Card
               href={item.href}
               imgSrc={item.imgSrc}
+              type={item.type}
               title={item.title}
+              price={item.price}
             ></Card>
           </div>
         );
@@ -33,4 +35,4 @@ const Homes = props => (
   </Conteiner>
 );
 
-export default Homes;
+export default Section;
