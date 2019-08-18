@@ -1,5 +1,3 @@
-This demo-project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## demo of Airbnb frontend
 Visual implementation is guided by layouts from the [course materials](https://skl.sh/2ZbsiOL) that are based on the official Airbnb website. 
 
