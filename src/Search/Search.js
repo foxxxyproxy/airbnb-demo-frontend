@@ -2,7 +2,7 @@ import React from "react";
 import searchIcon from "./search-icon.svg";
 import styled from "styled-components";
 
-const Conteiner = styled.div`
+const Conteiner = styled.form`
   width: 100%;
   position: relative;
   margin-bottom: 60px;
@@ -39,9 +39,18 @@ const SearchButton = styled.button`
 `;
 
 const Search = props => (
-  <Conteiner className="conteiner">
-    <SearchInput className="search__input" placeholder='Try "Los Angeles"' />
-    <SearchButton className="search__button">Search</SearchButton>
+  <Conteiner className="conteiner" action="#">
+    <SearchInput
+      className="search__input"
+      id="search"
+      name="search"
+      type="search"
+      autoFocus
+      placeholder='Try "Los Angeles"'
+    />
+    <SearchButton type="submit" className="search__button">
+      Search
+    </SearchButton>
   </Conteiner>
 );
 

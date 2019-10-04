@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "./logo.svg";
-import avatar from "./avatar.png";
+import avatar from "./avatar.jpg";
 import { NavLink, Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -13,7 +13,6 @@ const HeaderWrap = styled.header`
   justify-content: flex-end;
   background: #fffff;
   line-height: 19px;
-
   box-shadow: 0px 1px 0px #e1e7ed;
   padding: 0 26px;
 `;
@@ -47,6 +46,7 @@ const StLink = styled(Link)`
 
 const Avatar = styled.img`
   border-radius: 50%;
+  width: 35px;
 `;
 
 const Header = props => (
