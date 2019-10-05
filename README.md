@@ -10,3 +10,5 @@ Visual implementation is guided by layouts from the [course materials](https://s
 
 It runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+Deploy: https://airbnb-demo-frontend.alexignatova.now.sh
