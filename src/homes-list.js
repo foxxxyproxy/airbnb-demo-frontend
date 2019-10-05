@@ -9,25 +9,29 @@ const type = {
 const List = [
   {
     href: "/",
-    imgSrc: process.env.PUBLIC_URL + "/img/image.jpg",
+    imgSrc:
+      "https://raw.githubusercontent.com/foxxxyproxy/airbnb-demo-frontend/master/public/img/Image.jpg",
     type: type[0],
     title: "Quiet apartment",
     price: 80
   },
   {
     href: "/",
-    imgSrc: process.env.PUBLIC_URL + "/img/image-1.jpg",
+    imgSrc:
+      "https://raw.githubusercontent.com/foxxxyproxy/airbnb-demo-frontend/master/public/img/Image-1.jpg",
     type: type[0],
     title: "Romantic abin with view",
     price: 80
   },
   {
     href: "/",
-    imgSrc: process.env.PUBLIC_URL + "/img/image-2.jpg",
+    imgSrc:
+      "https://raw.githubusercontent.com/foxxxyproxy/airbnb-demo-frontend/master/public/img/Image-2.jpg",
     type: type[0],
     title: "Beautiful cozy room",
     price: 80
   }
 ];
 
+console.log(process.env.PUBLIC_URL);
 export default List;
