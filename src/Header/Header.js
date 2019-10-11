@@ -49,16 +49,24 @@ const Avatar = styled.img`
   width: 35px;
 `;
 
+const HeaderNav = styled.nav`
+  display: flex;
+  align-items: center;
+`;
+
 const Header = props => (
   <HeaderWrap className="header">
     <AppLogo className="header__logo" src={logo} alt="logo" title="AirBnb" />
 
-    <StyledLink to="/"> Become a host </StyledLink>
-    <StyledLink to="/"> Trips </StyledLink>
-    <StyledLink to="/"> Messages </StyledLink>
-    <StLink className="link--profile" to="/">
-      <Avatar src={avatar} alt="User avatar" />
-    </StLink>
+    <HeaderNav>
+      <StyledLink to="/become_a_host"> Become a host </StyledLink>
+      <StyledLink to="/trips"> Trips </StyledLink>
+      <StyledLink to="/messages"> Messages </StyledLink>
+
+      <StLink className="link--profile" to="/profile">
+        <Avatar src={avatar} alt="User avatar" />
+      </StLink>
+    </HeaderNav>
   </HeaderWrap>
 );
 

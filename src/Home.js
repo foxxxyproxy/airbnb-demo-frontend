@@ -28,21 +28,23 @@ const Title = styled.h1`
   }
 `;
 
-const Home = () => (
-  <html>
-    <Header />
-    <Conteiner className="main_conteiner">
-      <main>
-        <Title className="Title">
-          Book unique homes and experiences all over the world.
-        </Title>
-        <Search />
-        <Section SectionTitle="Homes" items={HomesList} />
-        <Section SectionTitle="Experiences" items={ExperiencesList} />
-      </main>
-    </Conteiner>
-    <Footer />
-  </html>
-);
-
-export default Home;
+export default class Home extends React.Component {
+  render() {
+    return (
+      <div>
+        <Header />
+        <Conteiner className="main_conteiner">
+          <main>
+            <Title className="Title">
+              Book unique homes and experiences all over the world.
+            </Title>
+            <Search />
+            <Section SectionTitle="Homes" items={HomesList} />
+            <Section SectionTitle="Experiences" items={ExperiencesList} />
+          </main>
+        </Conteiner>
+        <Footer />
+      </div>
+    );
+  }
+}

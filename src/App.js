@@ -12,6 +12,10 @@ function App() {
       <Switch>
         <Redirect exact from="/" to="/Home" />
         <Route exact path="/Home" component={Home} />
+        <Route exact path="/become_a_host" component={Home} />
+        <Route exact path="/trips" component={Home} />
+        <Route exact path="/messages" component={Home} />
+        <Route exact path="/profile" component={Home} />
       </Switch>
     </BrowserRouter>
   );
