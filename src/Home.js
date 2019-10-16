@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import styled from "styled-components";
 import HomesList from "./homes-list";
 import ExperiencesList from "./experiences-list";
+import { mapItemsToObjects } from "./data-helper";
 
 const Conteiner = styled.div`
   width: 95%;
@@ -25,22 +26,6 @@ const Title = styled.h1`
     line-height: 42px;
   }
 `;
-
-function mapItemsToObjects(items) {
-  const reducedItems = items.reduce(function(prevValue, currentValue) {
-    return {
-      ...prevValue,
-      [currentValue.id]: currentValue
-    };
-  }, {});
-
-  return {
-    ...reducedItems, // copy reducedItems
-    list: items.map(function(item) {
-      return item.id; // return only id
-    })
-  };
-}
 
 export default class Home extends React.Component {
   render() {
@@ -62,8 +47,8 @@ export default class Home extends React.Component {
               items={mapItemsToObjects(ExperiencesList.items)}
             />
           </main>
+          <Footer />
         </Conteiner>
-        <Footer />
       </div>
     );
   }

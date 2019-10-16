@@ -16,12 +16,6 @@ const FooterWrap = styled.footer`
   }
 `;
 
-const Conteiner = styled.div`
-  width: 95%;
-  max-width: 992px;
-  margin: 0 auto;
-`;
-
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: var(--mainColor);
@@ -44,34 +38,32 @@ const Nav = styled.nav`
 
 const Footer = props => (
   <FooterWrap className="footer">
-    <Conteiner>
-      <div className="row">
-        <div className="col-xs-12 col-md-6 col-lg-4">
-          <Nav className="footer__nav">
-            <Title>Airbnb</Title>
-            <StyledLink to="/"> About </StyledLink>
-            <StyledLink to="/"> Press </StyledLink>
-            <StyledLink to="/"> Help </StyledLink>
-          </Nav>
-        </div>
-        <div className="col-xs-12 col-md-6 col-lg-4">
-          <Nav className="footer__nav">
-            <Title>Discover</Title>
-            <StyledLink to="/"> Travel credit </StyledLink>
-            <StyledLink to="/"> Business </StyledLink>
-            <StyledLink to="/"> Guidebooks </StyledLink>
-          </Nav>
-        </div>
-        <div className="col-xs-12 col-md-6 col-lg-4">
-          <Nav className="footer__nav">
-            <Title>Hosting</Title>
-            <StyledLink to="/"> Why host </StyledLink>
-            <StyledLink to="/"> Hospitality </StyledLink>
-            <StyledLink to="/"> Community </StyledLink>
-          </Nav>
-        </div>
+    <div className="row">
+      <div className="col-xs-12 col-md-6 col-lg-4">
+        <Nav className="footer__nav">
+          <Title>Airbnb</Title>
+          <StyledLink to="/"> About </StyledLink>
+          <StyledLink to="/"> Press </StyledLink>
+          <StyledLink to="/"> Help </StyledLink>
+        </Nav>
       </div>
-    </Conteiner>
+      <div className="col-xs-12 col-md-6 col-lg-4">
+        <Nav className="footer__nav">
+          <Title>Discover</Title>
+          <StyledLink to="/"> Travel credit </StyledLink>
+          <StyledLink to="/"> Business </StyledLink>
+          <StyledLink to="/"> Guidebooks </StyledLink>
+        </Nav>
+      </div>
+      <div className="col-xs-12 col-md-6 col-lg-4">
+        <Nav className="footer__nav">
+          <Title>Hosting</Title>
+          <StyledLink to="/"> Why host </StyledLink>
+          <StyledLink to="/"> Hospitality </StyledLink>
+          <StyledLink to="/"> Community </StyledLink>
+        </Nav>
+      </div>
+    </div>
   </FooterWrap>
 );
 
