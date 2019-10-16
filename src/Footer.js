@@ -17,7 +17,7 @@ const FooterWrap = styled.footer`
 `;
 
 const Conteiner = styled.div`
-  width: 80%;
+  width: 95%;
   max-width: 992px;
   margin: 0 auto;
 `;

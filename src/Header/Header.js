@@ -15,6 +15,11 @@ const HeaderWrap = styled.header`
   line-height: 19px;
   box-shadow: 0px 1px 0px #e1e7ed;
   padding: 0 26px;
+
+  margin-bottom: 44px;
+  @media (min-width: 576px) {
+    margin-bottom: 88px;
+  }
 `;
 
 const AppLogo = styled.img`

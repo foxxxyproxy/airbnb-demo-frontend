@@ -11,25 +11,28 @@ const Title = styled.h2`
   color: var(--mainColor);
 `;
 
-const Section = props => (
-  <Conteiner className="list">
-    <Title className="list__title">{props.SectionTitle} </Title>
-    <div className="row">
-      {props.items.map(item => {
-        return (
-          <div className="col-xs-12 col-md-6 col-lg-4">
-            <Card
-              href={item.href}
-              imgSrc={item.imgSrc}
-              type={item.type}
-              title={item.title}
-              price={item.price}
-            ></Card>
-          </div>
-        );
-      })}
-    </div>
-  </Conteiner>
-);
-
-export default Section;
+export default class Section extends React.Component {
+  render() {
+    return (
+      <Conteiner className="list">
+        <Title className="list__title">{this.props.SectionTitle} </Title>
+        <div className="row">
+          {this.props.items.list.map(id => {
+            const data = this.props.items[id];
+            return (
+              <div className="col-xs-12 col-md-6 col-lg-4" key={id}>
+                <Card
+                  href={data.href}
+                  imgSrc={data.imgSrc}
+                  type={data.type}
+                  title={data.title}
+                  price={data.price}
+                ></Card>
+              </div>
+            );
+          })}
+        </div>
+      </Conteiner>
+    );
+  }
+}

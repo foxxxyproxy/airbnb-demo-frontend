@@ -5,21 +5,21 @@ import styled from "styled-components";
 const Conteiner = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
   width: 100%;
   a {
     text-decoration: none;
     color: var(--mainColor);
   }
   p {
-    margin: 10px;
+    margin: 10px 0;
   }
 `;
 
 const Photo = styled.img`
   width: 100%;
   max-width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 `;
 
 const Type = styled.p`
@@ -39,7 +39,7 @@ const Price = styled.p`
 
 const Card = props => (
   <Conteiner className="card_wrapper">
-    <Link href={props.href}>
+    <Link to={props.href}>
       <Photo src={props.imgSrc} alt={props.title} />
       <Type>{props.type}</Type>
       <Title>{props.title}</Title>

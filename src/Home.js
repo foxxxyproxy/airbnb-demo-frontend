@@ -8,7 +8,7 @@ import HomesList from "./homes-list";
 import ExperiencesList from "./experiences-list";
 
 const Conteiner = styled.div`
-  width: 80%;
+  width: 95%;
   max-width: 992px;
   margin: 0 auto;
 `;
@@ -19,14 +19,28 @@ const Title = styled.h1`
   line-height: 33px;
   display: block;
   width: 60%;
-  margin-top: 44px;
   margin-bottom: 20px;
   @media (min-width: 576px) {
-    margin-top: 88px;
     font-size: 36px;
     line-height: 42px;
   }
 `;
+
+function mapItemsToObjects(items) {
+  const reducedItems = items.reduce(function(prevValue, currentValue) {
+    return {
+      ...prevValue,
+      [currentValue.id]: currentValue
+    };
+  }, {});
+
+  return {
+    ...reducedItems, // copy reducedItems
+    list: items.map(function(item) {
+      return item.id; // return only id
+    })
+  };
+}
 
 export default class Home extends React.Component {
   render() {
@@ -39,8 +53,14 @@ export default class Home extends React.Component {
               Book unique homes and experiences all over the world.
             </Title>
             <Search />
-            <Section SectionTitle="Homes" items={HomesList} />
-            <Section SectionTitle="Experiences" items={ExperiencesList} />
+            <Section
+              SectionTitle="Homes"
+              items={mapItemsToObjects(HomesList.items)}
+            />
+            <Section
+              SectionTitle="Experiences"
+              items={mapItemsToObjects(ExperiencesList.items)}
+            />
           </main>
         </Conteiner>
         <Footer />
