@@ -12,7 +12,7 @@ const Response = {
       id: 1,
       href: "/",
       imgSrc:
-        "https://raw.githubusercontent.com/foxxxyproxy/airbnb-demo-frontend/master/public/img/Image.jpg",
+        "https://raw.githubusercontent.com/foxxxyproxy/airbnb-demo-frontend/master/public/img/Image",
       type: type[0],
       title: "Quiet apartment",
       price: 80
@@ -21,7 +21,7 @@ const Response = {
       id: 2,
       href: "/",
       imgSrc:
-        "https://raw.githubusercontent.com/foxxxyproxy/airbnb-demo-frontend/master/public/img/Image-1.jpg",
+        "https://raw.githubusercontent.com/foxxxyproxy/airbnb-demo-frontend/master/public/img/Image-1",
       type: type[0],
       title: "Romantic abin with view",
       price: 80
@@ -30,7 +30,7 @@ const Response = {
       id: 3,
       href: "/",
       imgSrc:
-        "https://raw.githubusercontent.com/foxxxyproxy/airbnb-demo-frontend/master/public/img/Image-2.jpg",
+        "https://raw.githubusercontent.com/foxxxyproxy/airbnb-demo-frontend/master/public/img/Image-2",
       type: type[0],
       title: "Beautiful cozy room",
       price: 80

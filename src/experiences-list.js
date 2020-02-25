@@ -12,7 +12,7 @@ const Response = {
       id: 1,
       href: "/",
       imgSrc:
-        "https://raw.githubusercontent.com/foxxxyproxy/airbnb-demo-frontend/master/public/img/Image-5.jpg",
+        "https://raw.githubusercontent.com/foxxxyproxy/airbnb-demo-frontend/master/public/img/Image-5",
       type: type[0],
       title: "Authentic Thai Lesson",
       price: 80
@@ -21,7 +21,7 @@ const Response = {
       id: 2,
       href: "/",
       imgSrc:
-        "https://raw.githubusercontent.com/foxxxyproxy/airbnb-demo-frontend/master/public/img/Image-3.jpg",
+        "https://raw.githubusercontent.com/foxxxyproxy/airbnb-demo-frontend/master/public/img/Image-3",
       type: type[0],
       title: "Retro Photoshoot in NYC",
       price: 50
@@ -30,7 +30,7 @@ const Response = {
       id: 3,
       href: "/",
       imgSrc:
-        "https://raw.githubusercontent.com/foxxxyproxy/airbnb-demo-frontend/master/public/img/Image-4.jpg",
+        "https://raw.githubusercontent.com/foxxxyproxy/airbnb-demo-frontend/master/public/img/Image-4",
       type: type[0],
       title: "Sunset Hike",
       price: 30
