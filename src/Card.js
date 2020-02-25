@@ -40,7 +40,7 @@ const Price = styled.p`
 const Card = props => (
   <Conteiner className="card_wrapper">
     <Link to={props.href}>
-      <Photo src={props.imgSrc + ".jpg"} alt={props.title} srcset={props.imgSrc+"-medium.jpg 560w"}/>
+      <Photo src={props.imgSrc + ".jpg"} alt={props.title} srcset={`${props.imgSrc}-medium.jpg 560w, ${props.imgSrc}-big.jpg 840w`}/>
       <Type>{props.type}</Type>
       <Title>{props.title}</Title>
       <Price>{props.price}$ per night</Price>
