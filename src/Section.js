@@ -14,8 +14,8 @@ const Title = styled.h2`
 export default class Section extends React.Component {
   render() {
     return (
-      <Conteiner className="list">
-        <Title className="list__title">{this.props.SectionTitle} </Title>
+      <Conteiner className="section_list">
+        <Title className="section__title">{this.props.SectionTitle}</Title>
         <div className="row">
           {this.props.items.list.map(id => {
             const data = this.props.items[id];

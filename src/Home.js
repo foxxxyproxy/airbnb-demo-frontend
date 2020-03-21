@@ -34,10 +34,10 @@ export default class Home extends React.Component {
         <Header />
         <Conteiner className="main_conteiner">
           <main>
-            <Title className="Title">
+            <Title className="main_title">
               Book unique homes and experiences all over the world.
             </Title>
-            <Search />
+            <Search className="main_search"/>
             <Section
               SectionTitle="Homes"
               items={mapItemsToObjects(HomesList.items)}

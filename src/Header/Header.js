@@ -61,7 +61,7 @@ const HeaderNav = styled.nav`
 
 const Header = props => (
   <HeaderWrap className="header">
-    <AppLogo className="header__logo" src={logo} alt="logo" title="AirBnb" />
+    <AppLogo className="header__logo" src={logo} alt="logo" title="AirBnb" aria-label="logo" />
 
     <HeaderNav>
       <StyledLink to="/become_a_host"> Become a host </StyledLink>
@@ -69,7 +69,7 @@ const Header = props => (
       <StyledLink to="/messages"> Messages </StyledLink>
 
       <StLink className="link--profile" to="/profile">
-        <Avatar src={avatar} alt="User avatar" />
+        <Avatar aria-label="user profile" src={avatar} alt="User avatar" />
       </StLink>
     </HeaderNav>
   </HeaderWrap>

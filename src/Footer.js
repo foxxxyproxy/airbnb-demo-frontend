@@ -4,7 +4,6 @@ import styled from "styled-components";
 
 const FooterWrap = styled.footer`
   box-sizing: border-box;
-
   width: 100%;
   height: 100%;
   margin-top: 44px;

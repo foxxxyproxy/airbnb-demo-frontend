@@ -38,10 +38,24 @@ const SearchButton = styled.button`
   }
 `;
 
+const Label = styled.label`
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+`
+
 const Search = props => (
   <Conteiner className="conteiner" action="#">
+    <Label htmlFor="search">Search for location</Label>
     <SearchInput
-      className="search__input"
+      className={props.className || "search__input"}
       id="search"
       name="search"
       type="search"
