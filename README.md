@@ -1,5 +1,6 @@
 ## Demo of Airbnb frontend
-Visual implementation is guided by layouts from the [course materials](https://skl.sh/2ZbsiOL) that are based on the official Airbnb website. 
+Visual implementation is based on the official Airbnb website. 
+Figma-layouts was taken from this [course materials](https://skl.sh/2ZbsiOL)
 
 ### `How to run`
 
